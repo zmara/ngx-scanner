@@ -608,7 +608,7 @@ export class ZXingScannerComponent implements OnInit, OnDestroy {
     this.camerasFound.next([...devices]);
 
     if (!hasDevices) {
-      this.camerasNotFound.next();
+      this.camerasNotFound.next(null);
     }
 
     return devices;
